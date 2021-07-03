@@ -21,6 +21,6 @@ By: Tezzy
 - This is highly against [Discord ToS](https://discord.com/terms).
 - I don't take no responsibility for what your account or bot might face after using this tool as I do not promote the use of my tools.
 - **Note** that this isn't my original mdm bot, I created this in like 5-8 mins just cause I wanted to upload something in here.
-- Use this at your own risk. Make sure to give me credits if you skid.
+- - If you use this tool or find the work somewhat helpful, please make sure to star or fork the repository as that'll keep me somewhat motivated to upload more.
 - If you're having any issues, ig you can contact me on cord.
 - Enjoy<3
