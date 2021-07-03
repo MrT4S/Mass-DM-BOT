@@ -10,3 +10,9 @@ By: Tezzy
 - Put your bot prefix in `config.json` line 3 which can be anything.
 - Lastly, run `launch.bat` file and you are good to go!
 
+## MASS-DM COMMANDS:
+- {prefix}massdm MESSAGE:
+- MassDM a custom message in a guild the command is ran in.
+- {prefix}massdmall MESSAGE:
+- MassDM in all servers the bot is in (command can be ran anywhere).
+
