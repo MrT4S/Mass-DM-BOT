@@ -40,7 +40,7 @@ async def _massdmall(ctx, *, message):
         for user in guilds:
             global count
             try:
-                await user.send()
+                await user.send(f"{message}\n\n- {user.mention}")
                 count += 1
                 print(f"Messaged: {user} ({count})")
             except:
