@@ -16,7 +16,7 @@ client.remove_command('help')
 @client.event
 async def on_ready():
     print(f"=================\nLogged: {client.user} ({client.user.id})\n=================\nHelp: {prefix}help\n=================\nBy: github.com/DaddyTezzy\n=================")
-    await client.change_presence(activity=discord.Activity(name=f'{stats}'))
+    await client.change_presence(activity=discord.Game(name=f'{stats}'))
 
 @client.command(name='massdm')
 async def _massdm(ctx, *, message):
