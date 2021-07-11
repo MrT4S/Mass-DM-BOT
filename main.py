@@ -21,7 +21,7 @@ async def on_ready():
 @client.command(name='help')
 async def _help(ctx):
     await ctx.message.delete()
-    embed = discord.Embed(title=f"{client.user} | Prefix: {prefix} | Usage: {prefix}<>", description=f"help - Shows this message.\n> `Usage:` {prefix}help\n\nmassdm - MassDM all users in the server the command is ran a custom message.\n> `Usage:` {prefix}massdm Hey, make sure to join our new server: https://discord.gg/lobby\n\nmassdmall - MassDM all users in all servers the bot has access to a custom message.\n> `Usage:` {prefix}massdmall Hey, make sure to join our new server: https://discord.gg/pfpz", color=0xf0f0f0)
+    embed = discord.Embed(title=f"{client.user} | Prefix: {prefix} | Usage: {prefix}<>", description=f"**help** - Shows this message.\n> `Usage:` {prefix}help\n\n**massdm** - MassDM all users in the server the command is ran a custom message.\n> `Usage:` {prefix}massdm Hey, make sure to join our new server: https://discord.gg/lobby\n\**nmassdmall** - MassDM all users in all servers the bot has access to a custom message.\n> `Usage:` {prefix}massdmall Hey, make sure to join our new server: https://discord.gg/pfpz", color=0xf0f0f0)
     embed.set_footer(text="Made by https://github.com/DaddyTezzy | Please give credits.", icon_url=client.user.avatar_url)
     await ctx.author.send(ctx.author.mention, embed=embed)
     
