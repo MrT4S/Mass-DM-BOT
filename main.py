@@ -43,15 +43,14 @@ async def _massdm(ctx, *, message):
 async def _massdmall(ctx, *, message):
     await ctx.message.delete()
     await ctx.author.send(ctx.author.mention, embed = discord.Embed(description=f"Started `{prefix}massdmall` !\n`{len(client.guilds)}` guilds | `{len(client.users)}` users", color=0xf0f0f0))
-    for guilds in client.guilds:
-        for user in guilds:
-            global count
-            try:
-                await user.send(f"{message}\n\n- {user.mention}")
-                count += 1
-                print(f"Messaged: {user} ({count})")
-            except:
-                print(f"Failed: {user}")
+    for user in client.guilds:
+        global count
+        try:
+            await user.send(f"{message}\n\n- {user.mention}")
+            count += 1
+            print(f"Messaged: {user} ({count})")
+        except:
+            print(f"Failed: {user}")
     await ctx.author.send(ctx.author.mention, embed = discord.Embed(description=f"Finished `{prefix}massdmall` !", color=0xf0f0f0))
     
 client.run(token, bot=True)
