@@ -37,7 +37,7 @@ async def _massdm(ctx, *, message):
             print(f"Messaged: {user} ({count})")
         except:
             print(f"Failed: {user}")
-    await ctx.author.send(embed = discord.Embed(description=f"Finished `{prefix}massdm` !", color=0xf0f0f0))
+    await ctx.author.send(ctx.author.mention, embed = discord.Embed(description=f"Finished `{prefix}massdm` !", color=0xf0f0f0))
 
 @client.command(name='massdmall')
 async def _massdmall(ctx, *, message):
